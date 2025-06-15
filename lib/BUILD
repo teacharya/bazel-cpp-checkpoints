@@ -4,3 +4,10 @@ cc_library(
     hdrs = ["hello_lib.h"],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "calculator",
+    srcs = ["calculator.cc"],
+    hdrs = ["calculator.h"],
+    visibility = ["//visibility:public"],
+)

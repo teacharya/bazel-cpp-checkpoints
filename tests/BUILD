@@ -6,3 +6,12 @@ cc_test(
         "@com_google_googletest//:gtest_main",
     ],
 )
+
+cc_test(
+    name = "calculator_test",
+    srcs = ["calculator_test.cc"],
+    deps = [
+        "//lib:calculator",
+        "@com_google_googletest//:gtest_main",
+    ],
+)
